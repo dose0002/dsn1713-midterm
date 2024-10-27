@@ -2,14 +2,31 @@
 
 
 :root {
-    --primary-color: #1f3d2b; 
+    --primary-color: #2e483a; 
     --background-color: #F6F3ED;
+    --bs-primary: #2e483a; 
 }
 
+.bg-primary, .btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
 
 body {
     background-color: var(--background-color);
     font-family: "Sarala", sans-serif;
+}
+
+section {
+    border-top: 1px solid #e0e0e0; 
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#hero, #cta, footer {
+    border-top: none;
+    border-bottom: none;
 }
 
 h1, h2, h3 {
@@ -18,6 +35,14 @@ h1, h2, h3 {
 
 .navbar-brand {
     color: #F6F3ED;
+}
+
+.navbar, footer, .bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary, .navbar-brand, .footer-text {
+    color: var(--primary-color) !important;
 }
 
 
@@ -34,11 +59,17 @@ h1, h2, h3 {
 
 
 #cta {
-    background-image: url('images/cta-bg.png');
+    background-image: url('images/cta-bg.png'); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Adjust height as needed for a larger or smaller image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
 }
-
 
 .btn-primary, .btn-success {
     background-color: var(--primary-color);
@@ -62,6 +93,5 @@ footer img {
     max-width: 80px;
     max-height: 80px;
     border-radius: 50%;
-}
-
-
+    }
+    
