@@ -1,53 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
-/* Set custom variables here */
 
-
-
-
-
-.navbar-brand {
-  color: #F6F3ED;
+:root {
+    --primary-color: #1f3d2b; 
+    --background-color: #F6F3ED;
 }
 
+
 body {
-  font-family: "Sarala", sans-serif;
+    background-color: var(--background-color);
+    font-family: "Sarala", sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather", serif;
+    font-family: "Merriweather", serif;
 }
+
+.navbar-brand {
+    color: #F6F3ED;
+}
+
 
 #hero {
-  height: 800px;
-  background-color: #E4E6DB;
-  background-image: url(../images/hero-bg-img.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    height: 100vh;
+    background-image: url('images/hero-bg-img.png');
+    background-size: cover;
+    background-position: center;
 }
 
-#hero .d-flex {
-  height: 800px;
+#hero h1, #hero p {
+    color: black;
 }
+
 
 #cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-image: url('images/cta-bg.png');
+    background-size: cover;
+    background-position: center;
 }
 
-#cta .d-flex {
-  height: 400px;
+
+.btn-primary, .btn-success {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
 }
 
-section:not(#hero):not(#cta){
-  padding: 60px 0;
+.btn-primary:hover, .btn-success:hover {
+    background-color: #163320; 
 }
 
-@media(min-width: 993px){
-  section:not(#hero):not(#cta){
-    padding: 100px 0;
-  }
+
+.navbar-brand img,
+#how-it-works img,
+footer img {
+    max-width: 40px;
+    max-height: 40px;
 }
+
+#testimonials img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+
