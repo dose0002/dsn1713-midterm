@@ -59,11 +59,11 @@ h1, h2, h3 {
 
 
 #cta {
-    background-image: url('images/cta-bg.png'); /* Replace with your actual image path */
+    background-image: url('images/cta-bg.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh; /* Adjust height as needed for a larger or smaller image */
+    height: 60vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,6 +88,11 @@ footer img {
     max-width: 40px;
     max-height: 40px;
 }
+
+.navbar-brand {
+    color: #F6F3ED !important; 
+}
+
 
 #testimonials img {
     max-width: 80px;
